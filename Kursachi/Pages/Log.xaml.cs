@@ -13,17 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Kursachi
+namespace Kursachi.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для Log.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Log : Page
     {
-        public MainWindow()
+        public Log()
         {
             InitializeComponent();
-            MainFrame.Navigate(new Page1());
         }
     }
 }
