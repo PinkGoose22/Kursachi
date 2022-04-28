@@ -16,18 +16,13 @@ using System.Windows.Shapes;
 namespace Kursachi.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для Log.xaml
+    /// Логика взаимодействия для REG.xaml
     /// </summary>
-    public partial class Log : Page
+    public partial class REG : Page
     {
-        public Log()
+        public REG()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new Page1());
         }
     }
 }

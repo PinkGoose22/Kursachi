@@ -27,7 +27,12 @@ namespace Kursachi
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Pages.Log());
+            NavigationService.Navigate(new Pages.Log()); 
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Pages.REG());
         }
     }
 }

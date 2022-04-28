@@ -23,17 +23,26 @@
 			<ColumnDefinition Width="7*"/>
 			<ColumnDefinition Width="7*"/>
 		</Grid.ColumnDefinitions>
-		<Button Content="CALC" Foreground="White" HorizontalAlignment="Center" Width="77" Margin="0,10,0,10" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionTextBrushKey}}"/>
-		<Button Content="FAQ" HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="0.648,0.635" Grid.Column="1" Height="36" Width="77" Background="Black" Foreground="White"/>
-		<Button Grid.Column="2" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Height="36" Width="77" BorderBrush="White">
+        <Grid Panel.ZIndex="-1"  Grid.Row="0" Grid.ColumnSpan="6" Background="Black"></Grid>
+        <Grid Panel.ZIndex="-1"  Grid.Row="1" Grid.ColumnSpan="6" Background="YellowGreen"></Grid>
+        <Grid Panel.ZIndex="-1"  Grid.Row="2" Grid.ColumnSpan="6" Background="Yellow"></Grid>
+        <Grid Panel.ZIndex="-1"  Grid.Row="3" Grid.ColumnSpan="6" Background="Yellow"></Grid>
+		<Button Content="CALC" Foreground="White" HorizontalAlignment="Center" Width="77" Margin="0,10,0,10" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionTextBrushKey}}" BorderBrush="Black"/>
+		<Button Content="FAQ" HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="0.648,0.635" Grid.Column="1" Height="36" Width="77" Background="Black" Foreground="White" BorderBrush="Black"/>
+		<Button Grid.Column="2" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Height="36" Width="77" BorderBrush="Black">
 			<Button.Background>
 				<ImageBrush ImageSource="/dostavka.png"/>
 			</Button.Background>
 		</Button>
-		<Label Grid.Column="3" Content="8-800-555-35-35" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-		<Button Grid.Column="4" Content="Register" HorizontalAlignment="Center" VerticalAlignment="Center" Width="77" Height="36" Background="Black" Foreground="White"/>
-		<Button Grid.Column="5" Content="Log In" HorizontalAlignment="Center" VerticalAlignment="Center" Height="36" Width="77" Background="Black" Foreground="White" Click="Button_Click"/>
+		<Label Grid.Column="3" Content="8-800-555-35-35" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"/>
+		<Button Grid.Column="4" Content="Register" HorizontalAlignment="Center" VerticalAlignment="Center" Width="77" Height="36" Background="Black" Foreground="White" BorderBrush="Black" Click="Button_Click_1"/>
+		<Button Grid.Column="5" Content="Log In" HorizontalAlignment="Center" VerticalAlignment="Center" Height="36" Width="77" Background="Black" Foreground="White" Click="Button_Click" BorderBrush="Black"/>
+        <DataGrid Grid.Row="1" Grid.RowSpan="3" Grid.ColumnSpan="3">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Области Доставки"></DataGridTextColumn>
+                </DataGrid.Columns>
 
+        </DataGrid>
 
 
 	</Grid>
