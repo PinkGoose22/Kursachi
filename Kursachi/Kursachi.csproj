@@ -100,7 +100,6 @@
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\Role.cs" />
     <Compile Include="Models\sysdiagrams.cs" />
-    <Compile Include="Models\TimeOfDelivery.cs" />
     <Compile Include="Models\TypeOfContainer.cs" />
     <Compile Include="Models\TypeOfProduct.cs" />
     <Compile Include="Pages\Log.xaml.cs">

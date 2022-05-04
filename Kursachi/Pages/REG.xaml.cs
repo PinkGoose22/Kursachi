@@ -20,9 +20,36 @@ namespace Kursachi.Pages
     /// </summary>
     public partial class REG : Page
     {
+        public  Models.Company company { get; set; } = new Models.Company() { RoleId = 2 };
         public REG()
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+
+                var db = new Models.DB();
+                db.Company.Add(company);
+                db.SaveChanges();
+                MessageBox.Show("Сохранено");
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Данные введены не правильно", "Ошибка");
+            }
+
+        }
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            NavigationService.GoBack();
+        }
+
+
+     
     }
 }
+

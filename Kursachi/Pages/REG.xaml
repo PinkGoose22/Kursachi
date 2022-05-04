@@ -8,18 +8,40 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="REG">
 
-    <Grid Background="White">
+    <Grid Background="Black" DataContext="{Binding ElementName=RegistationPage, Path=.}">
         <Grid.RowDefinitions>
-            <RowDefinition Height="78*"/>
-            <RowDefinition Height="247*"/>
-            <RowDefinition Height="125*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="4*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="74*"/>
-            <ColumnDefinition Width="160*"/>
-            <ColumnDefinition Width="341*"/>
-            <ColumnDefinition Width="225*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
         </Grid.ColumnDefinitions>
-
+        <Grid Panel.ZIndex="-1"  Grid.Row="2" Grid.ColumnSpan="6" Background="Yellow"></Grid>
+        <Grid Panel.ZIndex="-1"  Grid.Row="3" Grid.ColumnSpan="6" Background="Yellow"></Grid>
+        <Grid Panel.ZIndex="-1"  Grid.Row="4" Grid.ColumnSpan="6" Background="Yellow"></Grid>
+        <Grid Panel.ZIndex="-1"  Grid.Row="1" Grid.ColumnSpan="5" Background="Yellow" Grid.RowSpan="7"></Grid>
+        <Grid Panel.ZIndex="-1"  Grid.Row="6" Grid.ColumnSpan="6" Background="Yellow"></Grid>
+        <Grid Panel.ZIndex="-1"  Grid.Row="7" Grid.ColumnSpan="6" Background="Yellow"></Grid>
+        <Grid Panel.ZIndex="-1"  Grid.Row="1" Grid.ColumnSpan="6" Background="Yellow"></Grid>
+        <TextBox Text="{Binding Company.Name}" Grid.Row="2" Grid.Column="2"  Width="100" Margin="25,10"></TextBox>
+        <TextBox Text="{Binding Company.Login}"  Grid.Row="4" Grid.Column="2" Width="100" Margin="25,10"></TextBox>
+        <TextBox Text="{Binding Company.Password}" Grid.Row="6" Grid.Column="2"  Width="100" Height="30" Margin="25,0,25,10" VerticalAlignment="Bottom"></TextBox>
+        <Button Click="Button_Click" Margin="7,0,6,0" RenderTransformOrigin="0.5,0.5" Grid.Row="7">Сохранить
+        </Button>
+        <Label Grid.Column="2" Content="Полное имя" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" Background="Black" Foreground="White" BorderBrush="Black"/>
+        <Label Grid.Column="2" Content="Логин" HorizontalAlignment="Center" Grid.Row="3" VerticalAlignment="Center" Background="Black" Foreground="White" Height="28" Margin="53,10,53,12"/>
+        <Label Grid.Column="2" Content="Пароль" HorizontalAlignment="Center" Grid.Row="5" VerticalAlignment="Center" Background="Black" Foreground="White"/>
+        <Button Grid.Column="3" Content="Вернуться" HorizontalAlignment="Center"  Grid.Row="7" VerticalAlignment="Center" Width="163" Click="Button_Click_1" Grid.ColumnSpan="2" Margin="161,15,0,0" Height="35"/>
     </Grid>
 </Page>

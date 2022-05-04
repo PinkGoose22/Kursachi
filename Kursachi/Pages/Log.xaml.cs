@@ -42,7 +42,7 @@ namespace Kursachi.Pages
             else
             {
                 App.Company = Company;
-                NavigationService.Navigate(new Menu());
+                NavigationService.Navigate(new Page1());
             }
         }
     }

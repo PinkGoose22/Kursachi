@@ -1,10 +1,10 @@
-using System;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Data.Entity;
-using System.Linq;
-
 namespace Kursachi.Models
 {
+    using System;
+    using System.Data.Entity;
+    using System.ComponentModel.DataAnnotations.Schema;
+    using System.Linq;
+
     public partial class DB : DbContext
     {
         public DB()
@@ -20,7 +20,6 @@ namespace Kursachi.Models
         public virtual DbSet<Product> Product { get; set; }
         public virtual DbSet<Role> Role { get; set; }
         public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
-        public virtual DbSet<TimeOfDelivery> TimeOfDelivery { get; set; }
         public virtual DbSet<TypeOfContainer> TypeOfContainer { get; set; }
         public virtual DbSet<TypeOfProduct> TypeOfProduct { get; set; }
 
