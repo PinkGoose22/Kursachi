@@ -24,7 +24,9 @@
         </Grid.ColumnDefinitions>
         <Grid Panel.ZIndex="-1"  Grid.Row="0" Grid.ColumnSpan="6" Background="Black"></Grid>
         <Grid Panel.ZIndex="-1"  Grid.Row="2" Grid.ColumnSpan="6" Background="Yellow"></Grid>
-        <Grid Panel.ZIndex="-1"  Grid.Row="1" Grid.ColumnSpan="6" Background="Yellow"></Grid>
+        <Grid Panel.ZIndex="-1"  Grid.Row="1" Grid.ColumnSpan="6" Background="Yellow">
+            <Button Content="Log In" HorizontalAlignment="Left" Height="24" Margin="294,112,0,0" VerticalAlignment="Top" Width="114" BorderBrush="#00707070" Background="Black" Foreground="White" Click="Button_Click_1"/>
+        </Grid>
         <Grid Panel.ZIndex="-1"  Grid.Row="3" Grid.ColumnSpan="6" Background="Yellow"></Grid>
         <Grid Panel.ZIndex="-1"  Grid.Row="4" Grid.ColumnSpan="6" Background="Black"></Grid>
         <Button Content="REGISTER" Grid.Column="2" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="76" RenderTransformOrigin="0.519,0.068" Background="Black" BorderBrush="Black" Foreground="White" Margin="12,28,12,21" Height="26"/>
@@ -32,8 +34,8 @@
         <Label Content="LOG IN" Grid.Column="1" HorizontalAlignment="Left" Margin="102,23,0,0" Grid.Row="1" VerticalAlignment="Top" Background="Black" Foreground="White" Width="87" Height="81"/>
         <Label Content="PhoneNumber" Grid.Column="1" HorizontalAlignment="Left" Margin="102,50,0,49" Grid.Row="1" Foreground="White" Background="Black"/>
         <Label Content="Password" Grid.Column="1" HorizontalAlignment="Left" Margin="102,78,0,0" Grid.Row="1" VerticalAlignment="Top" Foreground="White" Background="Black" Width="87"/>
-        <TextBox Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="194,53,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="194,81,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="194,53,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Name="Login"/>
+        <TextBox Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="194,81,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Name="Password"/>
         <Button Content="BACK" HorizontalAlignment="Left" Margin="10,28,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click" Background="Black" BorderBrush="Black" Foreground="White"/>
     </Grid>
 

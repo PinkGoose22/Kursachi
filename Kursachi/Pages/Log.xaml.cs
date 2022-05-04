@@ -29,5 +29,21 @@ namespace Kursachi.Pages
         {
             NavigationService.Navigate(new Page1());
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            var connection = new Models.DB();
+            var Company = connection.Company.FirstOrDefault(u => u.Login == Login.Text & u.Password == Password.Text);
+            if (Company == null)
+            {
+                MessageBox.Show("Пользователь не найден", "Ошибка");
+
+            }
+            else
+            {
+                App.Company = Company;
+                NavigationService.Navigate(new Menu());
+            }
+        }
     }
 }
