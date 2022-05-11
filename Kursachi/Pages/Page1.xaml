@@ -40,8 +40,7 @@
         <DataGrid ItemsSource="{Binding DeliveryWays}" AutoGenerateColumns="False" HorizontalScrollBarVisibility="Visible" Grid.Row="1" Grid.RowSpan="3" Grid.ColumnSpan="3">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Области Доставки" Binding="{Binding Name}"></DataGridTextColumn>
-                </DataGrid.Columns>
-
+            </DataGrid.Columns>
         </DataGrid>
 
 
