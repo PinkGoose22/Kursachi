@@ -20,6 +20,8 @@ namespace Kursachi
     /// </summary>
     public partial class Page1 : Page
     {
+        private static readonly Models.DB _db = new Models.DB();
+        public System.Collections.ObjectModel.ObservableCollection<Models.DeliveryWays> DeliveryWays { get; set; } = new System.Collections.ObjectModel.ObservableCollection<Models.DeliveryWays>(_db.DeliveryWays.ToList());
         public Page1()
         {
             InitializeComponent();
