@@ -77,6 +77,14 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Pages\CALC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\FAQ.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\Log.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -102,6 +110,12 @@
     <Compile Include="Models\sysdiagrams.cs" />
     <Compile Include="Models\TypeOfContainer.cs" />
     <Compile Include="Models\TypeOfProduct.cs" />
+    <Compile Include="Pages\CALC.xaml.cs">
+      <DependentUpon>CALC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\FAQ.xaml.cs">
+      <DependentUpon>FAQ.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Log.xaml.cs">
       <DependentUpon>Log.xaml</DependentUpon>
     </Compile>

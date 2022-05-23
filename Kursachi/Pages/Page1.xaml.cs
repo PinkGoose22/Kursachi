@@ -36,5 +36,15 @@ namespace Kursachi
         {
             NavigationService.Navigate(new Pages.REG());
         }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Pages.FAQ());
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Pages.CALC());
+        }
     }
 }
