@@ -37,6 +37,8 @@ namespace Kursachi.Pages
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
+            string text = "423538974";
+            Label3.Content = text;
         }
     }
 }
